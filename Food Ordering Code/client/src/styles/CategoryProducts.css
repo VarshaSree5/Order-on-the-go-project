@@ -1,0 +1,97 @@
+/* Main container spacing */
+.categoryProducts-page {
+  margin-top: 15vh;
+  padding-bottom: 5vh;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.categoryProducts-page h2 {
+  margin: 3vh 2vw;
+  color: rgb(76, 105, 128);
+  font-size: 2rem;
+}
+
+/* Menu item grid container */
+.menu-items-container {
+  padding: 1rem 2vw;
+}
+
+/* Grid layout */
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual card */
+.menu-item-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.menu-item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside card */
+.menu-item-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Info section inside card */
+.menu-item-info {
+  padding: 0.75rem;
+}
+
+/* Item name */
+.menu-item-info h5 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Price text */
+.menu-item-info p {
+  margin: 0 0 0.25rem 0;
+  color: #555;
+}
+
+/* Restaurant name */
+.menu-item-info small {
+  color: #777;
+  font-style: italic;
+}
+
+/* ✅ Mobile responsiveness */
+@media (max-width: 480px) {
+  .categoryProducts-page h2 {
+    font-size: 1.5rem;
+    margin: 2vh 1rem;
+  }
+
+  .menu-item-info h5 {
+    font-size: 1rem;
+  }
+
+  .menu-items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .menu-item-card img {
+    height: 120px;
+  }
+}
